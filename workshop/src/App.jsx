@@ -12,8 +12,9 @@ export default function App() {
 
   return (
     <>
+      {/* note: this is a ternary vvv*/}
       {selectedContactId ? (<SelectedContact selectedContactId= 
-      {selectedContactId}/>) 
+      {selectedContactId} setSelectedContactId={setSelectedContactId}/>) 
       :(<ContactList setSelectedContactId={setSelectedContactId}/>)
       }
     </>

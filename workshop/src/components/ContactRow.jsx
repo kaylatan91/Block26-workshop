@@ -1,8 +1,3 @@
-import React from "react"
-import { useState } from "react"
-import SelectedContact from "./SelectedContact"
-
-
 // add onClick function that navigates to separate view
 // it should show selected contact and details about them
 
