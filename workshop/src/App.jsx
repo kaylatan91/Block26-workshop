@@ -13,7 +13,7 @@ export default function App() {
   return (
     <>
       {selectedContactId ? (<SelectedContact selectedContactId= 
-      {selectedContactId} />) 
+      {selectedContactId}/>) 
       :(<ContactList setSelectedContactId={setSelectedContactId}/>)
       }
     </>

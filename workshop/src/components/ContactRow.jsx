@@ -1,6 +1,6 @@
 import React from "react"
 import { useState } from "react"
-import App from "../App"
+import SelectedContact from "./SelectedContact"
 
 
 // add onClick function that navigates to separate view

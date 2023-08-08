@@ -1,7 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import App from "../App";
 
+import ContactRow from "./ContactRow";
   
- export default function SelectedContact() { 
+ export default function SelectedContact({selectedContactId, setSelectedContactId}) { 
+    const [contact, setContact] = useState(null);
     useEffect(() => {
         async function fetchSingleContact(contact) {
             try {
@@ -13,9 +16,24 @@ import { useEffect } from "react";
             }
         }
         fetchSingleContact()
-        }, [])
+        })
     
         return (
-            console.log('hi')
-        
-        )}
+            <table>
+                <thead>
+                    <tr>
+                        <th colSpan={3}>Contact List</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        {/* < ContactRow /> */}
+                    </tr>
+                </tbody>
+
+            </table>
+            
+
+        )
+    }
