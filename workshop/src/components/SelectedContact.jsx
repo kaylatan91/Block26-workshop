@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ContactList from "./ContactList";
 
   
  export default function SelectedContact({selectedContactId, setSelectedContactId}) { 
@@ -32,6 +33,9 @@ import { useEffect, useState } from "react";
                     <p>{contact.address?.street}</p>
                     <p>{contact.address?.city}</p>
                     <p>{contact.address?.zipcode}</p>
+                </div>
+                <div>
+                    <button type="button" onClick={() => {setSelectedContactId(null)}}>Return to Contact List</button>
                 </div>
             </div>
             
